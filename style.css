@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 930px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-radius: 20px;
+  margin: 25px;
+}
+
+.image-container {
+  position: relative;
+  padding: 50px 0;
+  z-index: 0;
+}
+
+.secondary-image {
+  position: absolute;
+  top: -300px;
+  left: -580px;
+  z-index: -1;
+}
+
+.inner picture {
+  margin-left: -80px;
+}
+
+.inner {
+  overflow: hidden;
+}
+.outer {
+  position: absolute;
+  top: 190px;
+  left: -90px;
+}
+.faq-container {
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.faq-container h2 {
+  color: hsl(238, 29%, 16%);
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+.faq-container > div {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq-container span {
+  float: right;
+  transition: 0.4s;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 15px 15px 15px 0;
+  color: hsl(237, 12%, 33%);
+  transition: 0.4s;
+}
+
+label:hover {
+  color: hsl(14, 88%, 65%);
+}
+input {
+  display: none;
+}
+
+.content {
+  padding: 5px 0;
+  color: hsl(240, 6%, 50%);
+  font-size: 14px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+input:checked ~ .content {
+  height: 64px;
+  opacity: 1;
+}
+
+input:checked ~ label {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+input:checked ~ label span {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+
+@media (max-width: 890px) {
+  .container {
+    max-width: 450px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 120px;
+  }
+
+  .image-container {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -110px;
+  }
+  .inner {
+    overflow: visible;
+  }
+
+  .outer {
+    display: none;
+  }
+  .secondary-image {
+    top: 110px;
+    left: -50px;
+  }
+  .faq-container h2 {
+    text-align: center;
+  }
+}

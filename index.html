@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<div class="container">
+  
+  <div class="image-container">
+    
+    <div class="inner">
+      
+      <picture>
+        <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:898px)">
+          <img src="./images/illustration-woman-online-desktop.svg" alt="">
+      </picture>
+  
+      <picture>
+        <source srcset="./images/bg-pattern-mobile.svg" media="(max-width:898px)">
+          <img class = "secondary-image" src="./images/bg-pattern-desktop.svg" alt="">
+      </picture>
+  
+    </div>
+  
+    <div class="outer">
+      <img src="./images/illustration-box-desktop.svg" alt="">
+    </div>
+  </div>
+  <div class="faq-container">
+    <h2>FAQ</h2>
+
+    <div class="faq-one">
+      <input type="checkbox" id=question-one>
+      <label for="question-one">How many team members can I invite?<span><img src="./images/icon-arrow-down.svg" alt=""></span></label>
+      <div class="content">You can invite up to 2 additional users on the Free plan. There is no limit on 
+        team members for the Premium plan.</div>
+    </div>
+
+    <div class="faq-two">
+      <input type="checkbox" id=question-two>
+      <label for="question-two">What is the maximum file upload size?<span><img src="./images/icon-arrow-down.svg" alt=""></span></label>
+      <div class="content">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    </div>
+
+    <div class="faq-three">
+      <input type="checkbox" id=question-three>
+      <label for="question-three">How do I reset my password?<span><img src="./images/icon-arrow-down.svg" alt=""></span></label>
+      <div class="content">Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</div>
+    </div>
+
+    <div class="faq-four">
+      <input type="checkbox" id=question-four>
+      <label for="question-four">Can I cancel my subscription?<span><img src="./images/icon-arrow-down.svg" alt=""></span></label>
+      <div class="content">Yes! Send us a message and we’ll process your request no questions asked.</div>
+    </div>
+
+    <div class="faq-five">
+      <input type="checkbox" id=question-five>
+      <label for="question-five">Do you provide additional support?<span><img src="./images/icon-arrow-down.svg" alt=""></span></label>
+      <div class="content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
